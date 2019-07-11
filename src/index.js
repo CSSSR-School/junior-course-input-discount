@@ -1,4 +1,5 @@
 import React from "react";
+import pt from 'prop-types';
 import s from "./index.module.css";
 
 const Discount = ({ title, name, value, onChange }) => {
