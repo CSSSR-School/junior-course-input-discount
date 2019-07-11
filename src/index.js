@@ -1,13 +1,26 @@
 import React from "react";
 import s from "./index.module.css";
 
-export const Discount = () => {
+const Discount = ({ title, name, value, onChange }) => {
   return (
-    <>
-      <h3 className={s.title}>Скидка</h3>
+    <React.Fragment>
+      <h3 className={s.title}>{title}</h3>
       <div className={s.wrapper}>
-        от <input className={s.discountValue} placeholder="30" />%
+        от <input
+          className={s.discountValue}
+          name={name}
+          value={value}
+          onChange={onChange} />%
       </div>
-    </>
+    </React.Fragment>
   );
 };
+
+Discount.propTypes = {
+  value: pt.number.isRequired,
+  onChange: pt.func.isRequired,
+  name: pt.string.isRequired,
+  title: pt.string.isRequired
+};
+
+export default Discount
