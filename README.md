@@ -19,7 +19,7 @@ _Все props являются обязательными!_
 
 ## Пример использования:
 
-```
+```jsx
 class NameForm extends React.Component {
   constructor(props) {
     super(props);
