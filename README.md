@@ -20,7 +20,7 @@ _Все props являются обязательными!_
 ## Пример использования:
 
 ```jsx
-class NameForm extends React.Component {
+class DiscountForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {value: ''};
@@ -34,9 +34,7 @@ class NameForm extends React.Component {
 
   render() {
     return (
-      <>
       <Discount title="Скидка" name="sale" value={this.state.value} onChange={handleChange} />
-      </>
     );
   }
 }
